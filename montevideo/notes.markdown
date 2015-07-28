@@ -18,3 +18,5 @@ call #454c
 {% endhighlight %}
 
 Luckily this sequence of instructions does not have a null in it.  Note what we do here: we move the constant #0xff7f to a `r5`.  Then we clear the high byte using `mov.b` to move the register to itself; now we have `#0x007f` in `r5`, and from here, we just push it, then call `INT`.
+
+### input: `35407fff45450512b0124c4511111111ee43`

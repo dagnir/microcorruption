@@ -28,3 +28,5 @@ At the beginning, we have 16 bytes of spaces, which is enough for our shellcode 
 Like in the previous buffer overflow attack, we have to write past the end of the buffer, and overwrite the return address of `login`.  In this case, the address we want it to jump to is the start of the buffer.
 
 That's it; after jump, it executes the shellcode, triggering the open deadbolt interrupt, and giving us access.
+
+### input: `30127f00b01232450000000000000000b432`
