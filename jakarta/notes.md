@@ -16,7 +16,7 @@
   - if either check doesn't pass, CPU shuts off
   - if both checks pass, `test_username_and_password_valid` called
   - `getsn` for username given max 255 bytes
-  - `getsn` for password given remainder of buffer (>= 31 bytes...)
+  - `getsn` for password given remainder of buffer (<= 31 bytes...)
   - return address of `login` on stack at 0x4016
 
 
