@@ -9,8 +9,10 @@
    - buffers are filled using `getsn` with size `0x30`
    - username stored at 0x240e
    - password stored at 0x2424
- - `login` doesn't actually seem to do anything with the username (see addr `0x4688`)
- - `malloc` memory blocks for username and password seem to be 22 bytes each, username starting at `0x2408`, followed by `0x241e`
+ - `login` doesn't actually seem to do anything with the username (see addr
+   `0x4688`)
+ - `malloc` memory blocks for username and password seem to be 22 bytes each,
+   username starting at `0x2408`, followed by `0x241e`
     - means 6 bytes used for metadata
       - bytes 0,1 seem to be address of previous block
       - bytes 2,3 seem to be address of next block
